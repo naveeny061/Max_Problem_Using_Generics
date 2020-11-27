@@ -47,4 +47,10 @@ public class MaxTest {
 		String result =maxValue.max("Peach","Apple","Bannana");
 		Assert.assertEquals("Peach", result);
 	}
+	@Test
+	public void givenMaxStringAtSecondPosition_ReturnMaximumValueSame() {
+		FindMax maxValue=new FindMax();
+		String result =maxValue.max("Apple","Peach","Bannana");
+		Assert.assertEquals("Peach", result);
+	}
 }
